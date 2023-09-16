@@ -1,0 +1,7 @@
+D:\Documents\C#\ООП\Лабораторна робота 1\Task_1\Program\Program\bin\Debug\Program.exe
+D:\Documents\C#\ООП\Лабораторна робота 1\Task_1\Program\Program\bin\Debug\Program.pdb
+D:\Documents\C#\ООП\Лабораторна робота 1\Task_1\Program\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+D:\Documents\C#\ООП\Лабораторна робота 1\Task_1\Program\Program\obj\Debug\Program.csproj.SuggestedBindingRedirects.cache
+D:\Documents\C#\ООП\Лабораторна робота 1\Task_1\Program\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+D:\Documents\C#\ООП\Лабораторна робота 1\Task_1\Program\Program\obj\Debug\Program.exe
+D:\Documents\C#\ООП\Лабораторна робота 1\Task_1\Program\Program\obj\Debug\Program.pdb
