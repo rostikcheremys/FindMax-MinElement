@@ -4,21 +4,21 @@ namespace Program
 {
     class Array
     {
-        private int[] array;
-        private Random random = new Random();
+        private int[] _array;
+        private Random _random = new Random();
 
         public Array(int size)
         {
-            array = new int[size];
+            _array = new int[size];
         }
 
         public int this[int index]
         {
             get
             {
-                if (index >= 0 && index < array.Length)
+                if (index >= 0 && index < _array.Length)
                 {
-                    return array[index];
+                    return _array[index];
                 }
 
                 Console.WriteLine("Iндекс виходить за межi масиву!");
@@ -29,13 +29,13 @@ namespace Program
         
         public int FindMaxElement()
         {
-            int max = array[0];
+            int max = _array[0];
 
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 1; i < _array.Length; i++)
             {
-                if (array[i] > max)
+                if (_array[i] > max)
                 {
-                    max = array[i];
+                    max = _array[i];
                 }
             }
 
@@ -44,13 +44,13 @@ namespace Program
 
         public int FindMinElement()
         {
-            int min = array[0];
+            int min = _array[0];
 
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 1; i < _array.Length; i++)
             {
-                if (array[i] < min)
+                if (_array[i] < min)
                 {
-                    min = array[i];
+                    min = _array[i];
                 }
             }
 
@@ -59,9 +59,9 @@ namespace Program
         
         public void FillRandom()
         {
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < _array.Length; i++)
             {
-                Console.WriteLine($"Елемент {i}: {array[i] = random.Next(1, 100)}");
+                Console.WriteLine($"Елемент {i}: {_array[i] = _random.Next(1, 100)}");
             }
         }
 
@@ -69,17 +69,17 @@ namespace Program
         {
             Console.WriteLine("Введiть елементи масиву:");
 
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < _array.Length; i++)
             {
                 Console.Write($"Елемент {i}: ");
                 
-                array[i] = Convert.ToInt32(Console.ReadLine());
+                _array[i] = Convert.ToInt32(Console.ReadLine());
             }
         }
         
         public void ScreenOutput()
         {
-            foreach (var number in array)
+            foreach (var number in _array)
             {
                 Console.Write(number + " ");
             }

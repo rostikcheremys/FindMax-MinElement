@@ -38,7 +38,7 @@ namespace Program
             Console.WriteLine($"Максимальний елемент: {array.FindMaxElement()}");
             Console.WriteLine($"Мiнiмальний елемент: {array.FindMinElement()}");
 
-            Console.Write("Введiть iндекс для отримання значення: ");
+            Console.Write("\nВведiть iндекс для отримання значення: ");
             int index = Convert.ToInt32(Console.ReadLine());
             
             Console.WriteLine($"Значення за iндексом {index}: {array[index]}");
