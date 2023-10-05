@@ -41,9 +41,7 @@ namespace Program
             Console.Write("\nВведiть iндекс для отримання значення: ");
             
             int index = Convert.ToInt32(Console.ReadLine());
-            int element = array.GetElement(index);
-            
-            Console.WriteLine($"Значення за iндексом {index}: {element}");
+            Console.WriteLine($"Значення за iндексом {index}: {array[index]}");
         }
     }
 }

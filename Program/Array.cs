@@ -11,17 +11,20 @@ namespace Program
         {
             _array = new int[size];
         }
-        
-        public int GetElement(int index)
-        {
-            if (index >= 0 && index < _array.Length)
-            {
-                return _array[index];
-            }
 
-            throw new Exception("Iндекс виходить за межi масиву!");
+        public int this[int index]
+        {
+            get
+            {
+                if (index >= 0 && index < _array.Length)
+                {
+                    return _array[index];
+                }
+                
+                throw new IndexOutOfRangeException("Iндекс виходить за межі масиву!");
+            }
         }
-        
+
         public int FindMaxElement()
         {
             int max = _array[0];
