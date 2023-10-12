@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Program
 {
@@ -24,35 +25,15 @@ namespace Program
                 throw new IndexOutOfRangeException("Iндекс виходить за межі масиву!");
             }
         }
-
+        
         public int FindMaxElement()
         {
-            int max = _array[0];
-
-            for (int i = 1; i < _array.Length; i++)
-            {
-                if (_array[i] > max)
-                {
-                    max = _array[i];
-                }
-            }
-
-            return max;
+            return _array.Max();
         }
 
         public int FindMinElement()
         {
-            int min = _array[0];
-
-            for (int i = 1; i < _array.Length; i++)
-            {
-                if (_array[i] < min)
-                {
-                    min = _array[i];
-                }
-            }
-
-            return min;
+            return _array.Min();
         }
         
         public void FillRandom()
